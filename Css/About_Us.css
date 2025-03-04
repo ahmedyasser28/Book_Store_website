@@ -1,0 +1,102 @@
+#Search {
+    padding: 8px;
+    margin-right: 5px;
+    margin-top: 4px;
+    font-size: 17px;
+    border: 1px solid #000000;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00457e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 4px solid #000000;
+    border-right: 4px solid #000000;
+    border-left: 2px solid #000000;
+}
+
+li {
+    float: left;
+    border-right: 2px solid #ffffff;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffa8a8;
+    color: #000000;
+}
+
+.active {
+    background-color: #5f1b1b;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+#pa {
+    color: black;
+    font-size: 20px;
+}
+
+#pa+p {
+    color: rgb(138, 14, 255);
+    font-size: 20px;
+}
+
+#copyright {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkblue;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.email a:hover {
+    color: crimson;
+    font-size: 65px;
+}
+
+.facebook a:hover {
+    color: rgb(4, 0, 255);
+
+    font-size: 65px;
+}
+
+.location a:hover {
+    color: rgb(1, 173, 87);
+
+    font-size: 65px;
+}
+
+a {
+    font-size: 50px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: powderblue;
+}
