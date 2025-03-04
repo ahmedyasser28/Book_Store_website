@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title> Login </title>
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/button.css">
+    <style>
+        input[type=submit] {
+            background-color: #007bff;
+            border: 8px solid #007bff;
+            color: #fff;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            font-size: large;
+        }
+    </style>
+    <script>
+        function passvalues() {
+            var Username = document.getElementById("user").value;
+            localStorage.setItem("User", Username);
+            return false;
+        }
+    </script>
+</head>
+
+
+<body>
+    <ul>
+        <div class="topnav">
+
+            <li style="float: right;"><input type="text" id="Search" placeholder="Search.."></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="login.html" id="Login">Login</a></li>
+            <li><a href="signup.html" id="Sign">Sign up</a></li>
+            <li><a href="About Us.html" id="About">About Us </a></li>
+
+        </div>
+    </ul>
+    <br><br><br><br><br>
+    <form align="center" method="post">
+        <b class="logword">Login</b> <br><br>
+        <label for="user"><b>Username</b></label>
+        <input type="text" name="user" id="user" required>
+        <br><br>
+        <label for="pass1"><b>Password</b></label>
+        <input type="password" name="password" id="pass1" required>
+        <br> <br> <br> <br>
+        <input type="submit" value="login as admin " name="login as admin" class="admin" onclick="passvalues()"
+            formaction="choose from options.html">
+            &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="login as user " name="login as user" class="user" onclick="passvalues();"
+            formaction="choose from options-user.html">
+    </form>
+
+
+</body>
+
+</html>

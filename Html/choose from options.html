@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>choose from options</title>
+
+    <link rel="stylesheet" href="../Css/navbar.css">
+</head>
+<style>
+button {
+    background-color: #007bff;
+    color: #fff;
+
+    border: 8px solid #007bff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+</style>
+<body>
+    <ul>
+        <div class="topnav">
+
+            <li style="float: right;"><input type="text" id="Search" placeholder="Search.."></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="About Us.html" id="About">About Us </a></li>
+            <li><span id="active"></span></li>
+
+        </div>
+    </ul>
+    <script>
+        document.getElementById("active").innerText = localStorage.getItem("User");
+
+    </script>
+    <br> <br> <br> <br> <br><br> <br><br>
+
+
+
+
+    <div align="center">
+        <img src="../image/young-man-taking-picking-book-260nw-751042393.jpg"><br><br>
+        <button onclick="window.location.href = 'Add new book.html';">Add new
+            book</button> <br>
+        <br>
+        <img src="../image/istockphoto-1043729520-612x612.jpg" width="270px" height="270px"><br><br>
+        <button onclick="window.location.href = 'book1-4.html';">view list of
+            books to edit</button>
+    </div>
+</body>
+
+</html>

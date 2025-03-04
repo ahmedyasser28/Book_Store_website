@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <title>choose from options</title>
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <style>
+        button {
+            background-color: #007bff;
+            color: #fff;
+
+            border: 8px solid #007bff;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px 20px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <div class="topnav">
+
+            <li style="float: right;"><input type="text" id="Search" placeholder="Search.."></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="About Us.html" id="About">About Us </a></li>
+            <li><span id="active"></span></li>
+
+        </div>
+    </ul>
+    <script>
+        document.getElementById("active").innerText = localStorage.getItem("User");
+    </script>
+    <br> <br> <br> <br> <br><br> <br><br>
+
+
+
+
+    <div align="center">
+        <img src="../image/young-man-taking-picking-book-260nw-751042393.jpg"><br><br>
+        <button onclick="window.location.href = 'book1-4_user.html';">View list of
+            available
+            books</button> <br>
+        <br>
+        <img src="../image/istockphoto-1043729520-612x612.jpg" width="270px" height="270px"><br><br>
+        <button onclick="window.location.href = 'Borrowed_Books.html';">View list of
+            borrowed books</button>
+    </div>
+</body>
+
+</html>

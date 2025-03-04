@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/button.css">
+    <style>
+        input[type=text],
+        select {
+            width: 90%;
+            font-size: large;
+            padding: 12px 20px;
+            margin: 3px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .pack {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        html,
+        body {
+            font-size: larger;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-right: 10px;
+        }
+    </style>
+<script src="../JS/Addnewbook.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <div class="topnav">
+
+            <li style="float: right;"><input type="text" id="Search" placeholder="Search.."></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="About Us.html" id="About">About Us </a></li>
+            <li><span id="active"></span></li>
+
+        </div>
+    </ul>
+    <script>
+        document.getElementById("active").innerText = localStorage.getItem("User");
+    </script>
+    <br> <br> <br> <br> <br><br> <br><br>
+    <div class="pack">
+        <form>
+            <label for="Book's_name">Book name:</label><br>
+            <input type="text" id="Book's_name" name="Book's_name" required><br>
+            <label for="Book's_ID">Book id:</label><br>
+            <input type="text" id="Book's_ID" name="Book's_ID" required><br>
+            <label for="Author_name">Author Name:</label><br>
+            <input type="text" id="Author_name" name="Author_name" required><br> Select a
+            Category:
+            <br>
+            <select id="Category" required>
+                <option value="">Select a category</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Crime">Crime</option>
+                <option value="Adventure">Adventure</option>
+            </select>
+            <div class="button-container">
+                <br><br>
+                <button type="button" onclick="addbook();" value="Save">Add Book</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

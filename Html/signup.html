@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/button.css">
+    <title> Sign Up </title>
+</head>
+
+<body>
+    <ul>
+        <div class="topnav">
+
+            <li style="float: right;"><input type="text" id="Search" placeholder="Search.."></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="login.html" id="Login">Login</a></li>
+            <li><a href="signup.html" id="Sign">Sign up</a></li>
+            <li><a href="About Us.html" id="About">About Us </a></li>
+
+        </div>
+    </ul>
+    <br><br>
+    <form method="post" align="center" action="login.html">
+        <b class="signword" >Sign Up</b> <br><br>
+        <label for="user" ><b>Username</b></label>
+        <input type="text" placeholder="EX:JOHN_SMITH" name="user" id="user" required>
+        <br><br>
+        <label for="pass1" ><b>Password</b></label>
+        <input type="password" placeholder="write a strong password" name="password" required id="pass1">
+        <br><br>
+        <label for="pass2" ><b>Confirm Password</b></label>
+        <input type="password" name="password" id="pass2" required>
+        <br><br>
+        <label for="email" ><b>E-mail</b> </label>
+        <input type="email" placeholder="EX:JOHN_SMITH@" name="email" required id="email">
+        <br><br>
+        <div>
+
+            <b id="isadmin"> is admin</b>
+            <input type="radio" name="admin" value="yes" id="admin checker_yes">
+            <label for="admin checker_yes"> YES </label> <wbr> <wbr>
+            <input type="radio" name="admin" value="no" id="admin checker_no">
+            <label for="admin checker_no"> NO </label> <br> <br>
+            <input type="submit" value="Sign Up" class="submit">                        
+        </div>
+    </form>
+
+</body>
+
+</html>
